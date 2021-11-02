@@ -34,7 +34,9 @@ git log // git log --oneline
 
 ## 5- Para voltar um commit especifico
 Quando é necessário voltar um commit, basta voce pegar o id do commit obtido no git log<br>
-E utilizar com o seguinte comando:<br>
+E utilizar com o seguinte comando:<br><br>
 
-git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 <br> (exemplo de id, não precisa digitar o número inteiro.. basta 5..6.. primeiros caracters que o sistema ja entende, mas por via das dúvidas vale a pena colar)
+(exemplo de id, não precisa digitar o número inteiro.. basta 5..6.. primeiros caracters que o sistema ja entende, mas por via das dúvidas vale a pena colar)<br><br>
+
+git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 <br> 
 
