@@ -22,8 +22,8 @@ git init
 git add nomearquivo.txt (Para adicionar um arquivo especifico) <br>
 git add --all / git add -A / git add . (essas três maneiras adiciona o dieretório inteiro)<br>
 
-## 2.1- Ver diferenças ou modificações antes de comittar
-git diff (se não foram adicionadas) 
+### 2.1- Ver diferenças ou modificações antes de comittar
+git diff (se não foram adicionadas) <br>
 git cached (se os arquivos já foram adicionados)
 
 ## 3- Salvar versionamento - COMMIT
