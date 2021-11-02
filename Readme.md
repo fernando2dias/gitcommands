@@ -17,3 +17,6 @@ git config --list
 ## 1- Iniciar um repositório
 git init
 
+## 2- Adicionar arquivos
+git add nomearquivo.txt (Para adicionar um arquivo especifico) <br>
+git add --all / git add -A / git add . (essas três maneiras adiciona o dieretório inteiro)<br>
