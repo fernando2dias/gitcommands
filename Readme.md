@@ -40,3 +40,15 @@ E utilizar com o seguinte comando:<br><br>
 
 git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 <br> 
 
+### 5.1- Caso tenha sido apenas para consulta, basta voltar para a branch principal com o comando:
+git checkout nomedabranch<br>
+
+### 5.2- Caso queira voltar um arquivo especifico antes de commitar basta:
+git checkout nomearquivo.txt
+
+### 5.3- Caso queira voltar todos os arquivos modificados
+git reset --hard
+
+
+
+
