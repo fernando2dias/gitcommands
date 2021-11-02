@@ -29,3 +29,12 @@ git cached (se os arquivos já foram adicionados)
 ## 3- Salvar versionamento - COMMIT
 git commit -m "mensagem do que foi alterado"
 
+## 4- Para ver o histórico de commits
+git log // git log --oneline
+
+## 5- Para voltar um commit especifico
+Quando é necessário voltar um commit, basta voce pegar o id do commit obtido no git log<br>
+E utilizar com o seguinte comando:<br>
+
+git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 <br> (exemplo de id, não precisa digitar o número inteiro.. basta 5..6.. primeiros caracters que o sistema ja entende, mas por via das dúvidas vale a pena colar)
+
