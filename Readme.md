@@ -49,6 +49,12 @@ git checkout nomearquivo.txt
 ### 5.3- Caso queira voltar todos os arquivos modificados
 git reset --hard
 
+### 5.4 Caso queira remover arquivos não trackeados
+git clean -f
 
-
-
+## 6- .gitignore
+nomearquivo.txt -> para um arquivo especifico<br>
+*.txt -> para uma extensão<br>
+pasta/  -> para uma pasta especifica<br>
+pasta/*.txt -> para uma pasta especifica com um extensão especifica<br>
+Default gitignore de varias linguagens ou tipos de projetos -> https://github.com/github/gitignore
