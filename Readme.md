@@ -46,6 +46,11 @@ git cached (se os arquivos já foram adicionados)
 git commit -m "mensagem do que foi alterado"
 ```
 
+### 3.1- Adiciona os arquivos e commita
+```sh
+git commit -a -m "mensagem do commit"
+```
+
 ## 4- Para ver o histórico de commits
 ```sh
 git log // git log --oneline
