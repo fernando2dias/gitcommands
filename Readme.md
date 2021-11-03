@@ -31,8 +31,8 @@ git init
 
 ## 2- Adicionar arquivos
 ```sh
-git add nomearquivo.txt (Para adicionar um arquivo especifico) <br>
-git add --all / git add -A / git add . (essas três maneiras adiciona o dieretório inteiro)<br>
+git add nomearquivo.txt (Para adicionar um arquivo especifico)
+git add --all / git add -A / git add . (essas três maneiras adiciona o dieretório inteiro)
 ```
 
 ### 2.1- Ver diferenças ou modificações antes de comittar
@@ -57,12 +57,12 @@ E utilizar com o seguinte comando:<br><br>
 
 (exemplo de id, não precisa digitar o número inteiro.. basta 5..6.. primeiros caracters que o sistema ja entende, mas por via das dúvidas vale a pena colar)<br><br>
 ```sh
-git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 <br> 
+git checkout 6581760a6d3484a2860f814c6816fb439a9061b4 
 ```
 
-### 5.1- Caso tenha sido apenas para consulta, basta voltar para a branch principal com o comando:
+### 5.1- Caso tenha sido apenas para consulta, basta voltar para a branch principal com o comando, ou para acessar uma branch especifica:
 ```sh
-git checkout nomedabranch<br>
+git checkout nomedabranch
 ```
 
 ### 5.2- Caso queira voltar um arquivo especifico antes de commitar basta:
@@ -96,4 +96,32 @@ git clone url-ou-pasta-proejto
 ```sh
 git pull
 ```
+
+## 9- Listar as branchs locais
+```sh
+git branch
+```
+
+## 10- Criar uma branch nova
+```sh
+git branch nomeDaBranch
+```
+
+### 10.1- Criar e ja trocar de branch
+```sh
+git checkout -b nomeDaBranch
+```
+
+### 10.2- Subir a branch no servidor
+```sh
+git push --set-upstream origin nomeDaBranch
+ou
+git push -u origin nomeDaBranch
+```
+
+
+
+
+
+
 
