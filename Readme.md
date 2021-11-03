@@ -183,6 +183,17 @@ git tag
 git push origin nomeDaTag
 ```
 
+### 14.3 - Navegar até uma tag especifica
+```sh
+git checkout nomeDaTag
+```
+Lembrando que tudo que você pode modificar a partir desse ponto e commitar fica fora da linha do tempo (HEAD). Este tipo de abordagem é mais recomendado para testes e validações.<br>
+Mas caso seja necessário incluir na HEAD, Você pode criar uma branch nova a partir desta branch alterada:
+```sh
+git checkout -b nomeDaBranchNova idDaBranchGerada
+```
+Usar somente de último caso.
+
 
 
 
