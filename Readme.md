@@ -138,11 +138,30 @@ git pull
 ```sh
 git branch -m NovoNomeBranch
 ```
+* OBS: No servidor não é possível renomear, caso seja necessário: Renomear local e subir ela renomeada e excluir a antiga. 
+
 
 ### 12.1 - Renomeando uma branch (sem estar nela)
 ```sh
 git branch -m nomeBranchAntiga nomeBranchNova
 ```
+
+## 13- Mesclando uma branch
+Por exemplo se tiver que mesclar o conteudo da branch develop na master, primeiro eu devo entrar na master.
+
+```sh
+git checkout master
+```
+Sempre é interessante verificar se há atualizações
+```sh
+git pull
+```
+Depois finalmente digitar o comando:
+```sh
+git merge develop
+```
+Assim você adiciona a branch master tudo que foi criado em devlop
+
 
 
 
