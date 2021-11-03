@@ -119,6 +119,31 @@ ou
 git push -u origin nomeDaBranch
 ```
 
+### 10.3- Como remover uma branch local
+```sh
+git branch -d nomeDaBranch
+```
+
+### 10.4- Como remover uma branch servidor
+```sh
+git push --delete origin nomeDaBranch
+```
+
+## 11- Atualização de branch, sempre antes de fazer um gitpush é interessante fazer um git pull para verificar se não tem nenhuma atualização.
+```sh
+git pull
+```
+
+## 12- Renomear uma branch (estando nela própria)
+```sh
+git branch -m NovoNomeBranch
+```
+
+### 12.1 - Renomeando uma branch (sem estar nela)
+```sh
+git branch -m nomeBranchAntiga nomeBranchNova
+```
+
 
 
 
