@@ -9,11 +9,15 @@ git status
 
 
 ## Configuracoes de usuario
-git config --global user.name "Fernando Dias" <br>
-git config --global user.email "email@gmail.com" <br>
+```sh
+git config --global user.name "Fernando Dias" 
+git config --global user.email "email@gmail.com" 
+```
 
 ## Para visualizar as configuracoes 
+```sh
 git config --list
+```
 
 ## 1- Iniciar um repositório
 ```sh
@@ -28,7 +32,7 @@ git add --all / git add -A / git add . (essas três maneiras adiciona o dieretó
 
 ### 2.1- Ver diferenças ou modificações antes de comittar
 ```sh
-git diff (se não foram adicionadas) <br>
+git diff (se não foram adicionadas) 
 git cached (se os arquivos já foram adicionados)
 ```
 
