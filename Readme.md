@@ -58,3 +58,12 @@ nomearquivo.txt -> para um arquivo especifico<br>
 pasta/  -> para uma pasta especifica<br>
 pasta/(asterisco).txt -> para uma pasta especifica com um extensão especifica<br>
 Default gitignore de varias linguagens ou tipos de projetos -> https://github.com/github/gitignore
+
+## 7- Clonar um projeto
+git clone url-ou-pasta-proejto
+
+## 8- Baixar ultima versão da branch
+```sh
+git pull
+```
+
