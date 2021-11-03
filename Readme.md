@@ -168,6 +168,25 @@ git merge develop
 Assim você adiciona a branch master tudo que foi criado em develop
 
 
+## 14- Criando tags
+```sh
+git tag -a v1.0 -m "Versão Inicial"
+```
+
+### 14.1 - Listagem de tags no projeto
+```sh
+git tag
+```
+
+### 14.2 - Enviar tag para o servidor
+```sh
+git push origin nomeDaTag
+```
+
+
+
+
+
 
 
 
