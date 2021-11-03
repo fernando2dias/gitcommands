@@ -160,7 +160,7 @@ Depois finalmente digitar o comando:
 ```sh
 git merge develop
 ```
-Assim você adiciona a branch master tudo que foi criado em devlop
+Assim você adiciona a branch master tudo que foi criado em develop
 
 
 
