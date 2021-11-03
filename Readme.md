@@ -2,11 +2,16 @@
 
 ## Comandos básicos
 Para conferir a versão do git instalado:<br>
-git --version<br><br>
+```sh
+git --version
+```
+
+<br>
 
 Para ver o status do arquivo<br>
+```sh
 git status
-
+```
 
 ## Configuracoes de usuario
 ```sh
