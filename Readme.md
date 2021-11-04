@@ -127,6 +127,9 @@ git push -u origin nomeDaBranch
 ### 10.3- Como remover uma branch local
 ```sh
 git branch -d nomeDaBranch
+
+em caso de problema, e queira forçar a remoção use -D
+git branch -D nomeDaBranch
 ```
 
 ### 10.4- Como remover uma branch servidor
@@ -173,17 +176,17 @@ Assim você adiciona a branch master tudo que foi criado em develop
 git tag -a v1.0 -m "Versão Inicial"
 ```
 
-### 14.1 - Listagem de tags no projeto
+### 14.1- Listagem de tags no projeto
 ```sh
 git tag
 ```
 
-### 14.2 - Enviar tag para o servidor
+### 14.2- Enviar tag para o servidor
 ```sh
 git push origin nomeDaTag
 ```
 
-### 14.3 - Navegar até uma tag especifica
+### 14.3- Navegar até uma tag especifica
 ```sh
 git checkout nomeDaTag
 ```
@@ -193,6 +196,17 @@ Mas caso seja necessário incluir na HEAD, Você pode criar uma branch nova a pa
 git checkout -b nomeDaBranchNova idDaBranchGerada
 ```
 Usar somente de último caso.
+
+### 14.4- Remover Tag (Local)
+```sh
+git tag -d nomeDaTag
+```
+
+### 14.5- Remover Tag (Servidor) 
+```sh
+git push --delete origin nomeDaTag
+```
+
 
 
 
