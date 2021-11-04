@@ -229,6 +229,62 @@ git push origin NomeDaTag
 ```
 
 
+## 15- Como sair da branch atual sem commitar e salvar para posteriormente continuar
+Você salva na memória do git
+```sh
+git stash
+ou 
+git stash save "mesnagem"
+```
+
+### 15.1- Listar stashs
+```sh
+git stash list
+```
+
+### 15.2- Aplicar o primeiro stash
+Suponhamos que voce tenha vários stash, ele sempre vai pegar do mais recente para o ultimo
+```sh
+git stash apply
+(continua com o stash na lista)
+
+git stash pop
+(adiciona e ja remove da lista)
+
+```
+
+### 15.2.1- Aplicar uma stash especifica
+```sh
+git stash pop codigoStash
+```
+
+### 15.3- Caso queira remover uma stash da sua lista
+```sh
+git stash drop codigoStrash
+```
+
+## 16- Reverter um commit(Local)
+```sh
+git reset --hard HEAD~1
+```
+O número depois do HEAD é a quantidade de commits que desejamos reverter
+ATENÇÃO: CASO SEJA REVERTIDO UM COMITT VOCÊ PERDE AS ALTERAÇÕES DO COMMIT
+
+
+## 17- Adicionar mudanças em um commit já existente (Local)
+```sh
+git commit --amend
+```
+Ele abre o VIM Editor de texto, voce pode alterar a mensagem do commit, você aperta ESQ e depois aperte :  o cursor para o final da pagina e ele espera um comando. Basta digitar:
+```sh
+wq
+```
+w = write
+q = quit
+
+
+
+
 
 
 
