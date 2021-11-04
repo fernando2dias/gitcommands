@@ -142,6 +142,11 @@ git push --delete origin nomeDaBranch
 git pull
 ```
 
+### 11.1- Caso deseje apenas trazer as informações da branch, sem atualizar o conteudo.
+```sh
+git fetch
+```
+
 ## 12- Renomear uma branch (estando nela própria)
 ```sh
 git branch -m NovoNomeBranch
@@ -275,7 +280,7 @@ ATENÇÃO: CASO SEJA REVERTIDO UM COMITT VOCÊ PERDE AS ALTERAÇÕES DO COMMIT
 ```sh
 git commit --amend
 ```
-Ele abre o VIM Editor de texto, voce pode alterar a mensagem do commit, você aperta ESQ e depois aperte :  o cursor para o final da pagina e ele espera um comando. Basta digitar:
+Ele abre o VIM Editor de texto, voce pode alterar a mensagem do commit, você aperta ESQ e depois aperte ":"  o cursor para o final da pagina e ele espera um comando. Basta digitar:
 ```sh
 wq
 ```
