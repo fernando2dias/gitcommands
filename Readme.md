@@ -175,6 +175,11 @@ git merge develop
 ```
 Assim você adiciona a branch master tudo que foi criado em develop
 
+### 13.1- Mesclar uma branch aplicando uma na outra
+Caso eu esteja na branch master e queira trazer features de uma branch que tenha uma linha temporal diferente da master
+```sh
+git rebase nomeDaBranch
+```
 
 ## 14- Criando tags
 ```sh
