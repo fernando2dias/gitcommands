@@ -207,6 +207,26 @@ git tag -d nomeDaTag
 git push --delete origin nomeDaTag
 ```
 
+### 14.6- Criar uma tag a partir de um commit especifico
+Para ficar mais facil liste os commits
+
+```sh
+git log --oneline
+```
+
+Depois vá para commit
+
+```sh
+git checout idDoCommit
+```
+Depois adicione a tag
+```sh
+git tag -a NomaDaTag -m "mensagem"
+```
+Se for desejo subir no servidor
+```sh
+git push origin NomeDaTag
+```
 
 
 
