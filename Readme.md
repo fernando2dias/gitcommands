@@ -227,7 +227,7 @@ git log --oneline
 Depois vá para commit
 
 ```sh
-git checout idDoCommit
+git checkout idDoCommit
 ```
 Depois adicione a tag
 ```sh
