@@ -41,6 +41,24 @@ git diff (se não foram adicionadas)
 git cached (se os arquivos já foram adicionados)
 ```
 
+### 2.2- Mostra todas as mudanças que não foram commitadas.
+```sh
+git diff [commit1] [commit2]
+```
+
+### 2.3- Mostra a diferença entre dois commits.
+```sh
+git diff [commit1] [commit2]
+```
+### 2.4-Mostra a diferença entre duas branchs.
+```sh
+git diff [branch1] [branch2]
+```
+### 2.5- Mostra a diferença entre dois arquivos.
+```sh
+git diff [arquivo1] [arquivo2]
+```
+
 ## 3- Salvar versionamento - COMMIT
 ```sh
 git commit -m "mensagem do que foi alterado"
