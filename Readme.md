@@ -310,6 +310,12 @@ wq
 w = write
 q = quit
 
+## Comandos úteis
+Fazer limpeza de branches remotas que já foram finalizadas.
+```
+git remote update origin --prune
+```
+
 
 
 
