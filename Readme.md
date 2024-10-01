@@ -112,7 +112,12 @@ Default gitignore de varias linguagens ou tipos de projetos -> https://github.co
 
 ## 7- Clonar um projeto
 ```sh
-git clone url-ou-pasta-proejto
+git clone url-ou-pasta-projeto
+```
+
+### 7.1- Clonar uma branch específica
+```sh
+git clone -b <nome da branch> url-ou-pasta-projeto
 ```
 
 ## 8- Baixar ultima versão da branch
