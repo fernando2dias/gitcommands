@@ -2,7 +2,7 @@
 
 ## 1 - Gerenciamento de Imagens
 
-### 1.1 - Baixar uma imagem do Docker Hub ou de outro registro de imagens
+### Baixar uma imagem do Docker Hub ou de outro registro de imagens
 ```
 docker pull <imagem>
 ```
@@ -11,12 +11,22 @@ docker pull <imagem>
 docker pull nginx
 ```
 
-### 1.2 - Listar todas as imagens disponíveis localmente
+### Listar todas as imagens disponíveis localmente
 ```
 docker images
 ```
 
-### 1.3 - Remover uma imagem do sistema
+### Rodar uma imagem
+```
+docker run <nome-da-imagem>
+```
+
+### Rodar uma imagem por um determinado tempo
+```
+docker run <nome-da-imagem> sleep 10
+```
+
+### Remover uma imagem do sistema
 ```
 docker rmi <imagem>
 ```
@@ -26,13 +36,27 @@ docker rmi nginx
 docker rm nginx
 ```
 
-### 1.4 - Criar Imagem
+### Criar Imagem
 ```
 docker build -t <nome-imagem>
 ```
 
-### 1.5 - Criar container
+### Criar container
 ```
 docker run --name <nome-container> -d <nome-imagem>
  ```
 
+### Verificar se o docker está rodando
+```
+systemctl status docker
+```
+
+### Verificar os containers em execução
+```
+docker ps
+```
+
+### Verificar os containers que estão em execução ou foram executados recentemente
+```
+docker ps -a
+```
