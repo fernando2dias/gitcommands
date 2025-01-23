@@ -44,6 +44,11 @@ docker build -t <nome-imagem>
 ### Criar container
 ```
 docker run --name <nome-container> -d <nome-imagem>
+```
+
+### Criar container e rodar de forma iterativa
+```
+docker run -it <nome-container>
  ```
 
 ### Verificar se o docker está rodando
@@ -59,4 +64,10 @@ docker ps
 ### Verificar os containers que estão em execução ou foram executados recentemente
 ```
 docker ps -a
+```
+
+### Parar um container
+```
+docker stop <id-container>
+docker stop <name-container>
 ```
