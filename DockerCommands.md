@@ -23,6 +23,16 @@ docker rmi <imagem>
 * Exemplo:
 ```
 docker rmi nginx
+docker rm nginx
 ```
 
+### 1.4 - Criar Imagem
+```
+docker build -t <nome-imagem>
+```
+
+### 1.5 - Criar container
+```
+docker run --name <nome-container> -d <nome-imagem>
+ ```
 
