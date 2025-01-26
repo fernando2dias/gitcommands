@@ -71,3 +71,44 @@ docker ps -a
 docker stop <id-container>
 docker stop <name-container>
 ```
+
+### Remover um container
+```
+docker rm <id-container>
+```
+
+### Listar arquivos dentro de um container
+```
+docker exec <container> ls
+```
+
+### Copiar uma arquivo para dentro de um container
+```
+docker cp <meu-arquivo> <container>:/<pasta-destino>
+```
+
+### Para exibir ionformações de um container
+```
+docker inspect <container>
+```
+
+### Container com MySQL
+-e : variavel de ambiente
+-p : porta
+```
+docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql
+```
+
+* Criando um banco de dados
+
+```
+docker exec -it mysql-A bash
+```
+
+```
+mysql -u root -p --protocol=tcp
+```
+
+```
+CREATE DATABASE fernandoDB;
+```
