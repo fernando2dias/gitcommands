@@ -112,3 +112,18 @@ mysql -u root -p --protocol=tcp
 ```
 CREATE DATABASE fernandoDB;
 ```
+
+* Criando um banco de dados e persistindo dados na maquina
+-v para indicar o volume
+```
+docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 --volume=/data/mysql-A:/var/lib/mysql mysql
+```
+
+* Criar um volume
+```
+docker volume create mysql_data
+```
+
+```
+docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 --volume=mysql_data:/var/lib/mysql mysql
+```
