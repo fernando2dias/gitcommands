@@ -1,5 +1,10 @@
 # Docker Commands
 
+## Obtendo informações docker 
+```
+docker info
+```
+
 ## 1 - Gerenciamento de Imagens
 
 ### Baixar uma imagem do Docker Hub ou de outro registro de imagens
@@ -24,6 +29,11 @@ docker run <nome-da-imagem>
 ### Rodar uma imagem por um determinado tempo
 ```
 docker run <nome-da-imagem> sleep 10
+```
+
+### Visualizar os processos que estão rodando dentro do container
+```
+docker top <container> 
 ```
 
 ### Remover uma imagem do sistema
@@ -92,6 +102,19 @@ docker cp <meu-arquivo> <container>:/<pasta-destino>
 docker inspect <container>
 ```
 
+### Limitar o uso de memória e CPU de um container
+Pensando em um container já criado
+Ex. Limitando o container a 128MB de memória
+Ex. Limitando o cpu em 20%.
+```
+docker update <container> -m 128M --cpus 0.2
+```
+Para checkar
+
+```
+docker stats <container>
+```
+
 ### Container com MySQL
 -e : variavel de ambiente
 -p : porta
@@ -126,4 +149,14 @@ docker volume create mysql_data
 
 ```
 docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 --volume=mysql_data:/var/lib/mysql mysql
+```
+
+### Criando uma rede
+```
+docker network create minha-rede
+```
+
+### Criando um container com uma rede
+```
+docker network create minha-rede
 ```
