@@ -160,3 +160,13 @@ docker network create minha-rede
 ```
 docker network create minha-rede
 ```
+
+
+
+
+### Criando um arquivo tar
+Estando dentro do diretorio que deseja compactar
+
+```
+tar -czf <nome-arquivo>.tar
+```
