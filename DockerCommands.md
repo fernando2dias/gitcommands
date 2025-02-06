@@ -162,11 +162,47 @@ docker network create minha-rede
 ```
 
 
-
-
 ### Criando um arquivo tar
 Estando dentro do diretorio que deseja compactar
 
 ```
 tar -czf <nome-arquivo>.tar
 ```
+
+### Criando um arquivo Dockerfile
+
+```
+nano Dockerfile
+```
+
+
+### Exemplo Dockerfile
+
+```
+FROM debian
+
+RUN apt-get update && apt-get install -y apache2 && apt-get clean
+
+ENV APACHE_LOCK_DIR="var/lock"
+ENV APACHE_PID_FILE="var/run/apache2.pid"
+ENV APACHE_RUN_USER="www-data"
+ENV APACHE_RUN_GROUP="www-data"
+ENV APACHE_LOG_DIR="/var/log/apache2"
+
+ADD arquivo.tar /var/www/html
+
+LABEL description = "Apache webserver 1.0"
+
+VOLUME /var/www/html
+ 
+
+```
+
+
+### Colocando um arquivo tar dentro de um container
+Estando dentro do diretorio que deseja compactar
+
+```
+tar -czf <nome-arquivo>.tar
+```
+
