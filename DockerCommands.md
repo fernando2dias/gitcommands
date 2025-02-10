@@ -92,6 +92,11 @@ docker rm <id-container>
 docker exec <container> ls
 ```
 
+### Acessando arquivos dentro de um container via bash
+```
+docker exec -it <container> bash
+```
+
 ### Copiar uma arquivo para dentro de um container
 ```
 docker cp <meu-arquivo> <container>:/<pasta-destino>
@@ -204,5 +209,29 @@ Estando dentro do diretorio que deseja compactar
 
 ```
 tar -czf <nome-arquivo>.tar
+```
+
+
+### Exemplo Dockerfile com python
+```
+FROM python:3.8
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+EXPOSE 8000
+CMD ["python", "app.py"]
+```
+
+### Exemplo Dockerfile com python e nginx
+```
+FROM python:3.8
+WORKDIR /app
+COPY . /app
+RUN pip install -r
+requirements.txt
+EXPOSE 8000
+CMD ["python", "app.py"]
+FROM nginx:latest
+COPY --from=0 /app/dist /usr/share/nginx/html
 ```
 
