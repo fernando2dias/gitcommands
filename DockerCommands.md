@@ -235,3 +235,18 @@ FROM nginx:latest
 COPY --from=0 /app/dist /usr/share/nginx/html
 ```
 
+## Criando um cluster swarm
+### Docker Swarm Init "criar manager"
+```
+docker swarm init
+```
+
+### Docker Swarm Join
+```
+docker swarm join --token <TOKEN> <IP:PORTA da Manager>
+```
+
+### Listar nós do Swarm 
+```
+docker node ls
+```
